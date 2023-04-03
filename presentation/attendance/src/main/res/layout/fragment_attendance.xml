@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/nav_host_fragment_container"
+        android:id="@+id/fcv_nav_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:navGraph="@navigation/attendance_nav_graph"

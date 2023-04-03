@@ -2,7 +2,11 @@ package com.nk.learning.modularconceptlearning
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.net.toUri
+import androidx.navigation.NavDeepLinkRequest
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.nk.learning.modularconceptlearning.databinding.ActivityMainBinding
 
@@ -18,9 +22,5 @@ class MainActivity : AppCompatActivity() {
         setView()
     }
 
-    private fun setView(){
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fcv_main) as NavHostFragment
-        val navController = navHostFragment.navController
-        binding.bottomNavView.setupWithNavController(navController)
-    }
+    private fun setView(){}
 }
